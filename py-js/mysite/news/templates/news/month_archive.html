@@ -1,0 +1,12 @@
+{% extends "news/base.html" %} {% block title %}month{% endblock title %} {%
+block body %}
+<h1>Articles for {{ month }}</h1>
+{%block body%}
+{% for article in articles_list %}
+<p>{{ article.headline }}</p>
+<p>By {{ article.reporter.full_name }}</p>
+
+<h2>Content:</h2>
+<p>{{ article.content }}</p>
+<hr />
+{% endfor %} {% endblock body %}

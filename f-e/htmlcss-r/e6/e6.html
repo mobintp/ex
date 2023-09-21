@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img</title>
+    <style>
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 200px;
+        }
+
+        .d {
+            border: 1px solid rgba(174, 174, 174, 0.552);
+            padding: .5rem;
+            border-radius: .2rem;
+        }
+
+        .e {
+            padding: .6rem;
+            padding-right: 15rem;
+            border: none;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.182);
+            border-radius: 2rem;
+            
+        }
+
+        .e:focus {
+            outline: 1px solid rgba(0, 0, 0, 0.182);
+        }
+
+        p.f {
+            color: rgb(209, 209, 209);
+            margin-bottom: .2rem;
+            font-size: 1rem;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <img src="./signal-2022-04-26-233953.jpeg" alt="me">
+    <hr>
+
+    <!-- 7d  -->
+    <input class="d" type="text" placeholder="Search">
+    <hr>
+
+    <!-- 7e  -->
+    <input class="e" placeholder="Search Google or type a URL" type="text" >
+    <hr>
+    <!-- 7f  -->
+    <p class="f">Email</p>
+    <input type="text" class="f">
+    <p class="agree">By clicking Agree & Join, you agree to the Privacy Policy.</p>
+    <button class="f">Agree & Join</button>
+</body>
+</html>

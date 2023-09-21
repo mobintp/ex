@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+        div, button, a {
+            vertical-align: middle;
+        }
+        button {
+            margin: .5rem;
+            padding: .5rem;
+        }
+
+        .page-num {
+            margin: .5rem;
+            font-size: 1.2rem;
+        }
+
+        /* stretch */
+        .stretch {
+            background-color: green;
+            font-size: 1.6rem;
+            border: none;
+            color: white;
+            padding: .8rem 1.2rem;
+            cursor: pointer;
+            transition: padding .8s;
+        }
+
+        .stretch:hover {
+            padding: 2.4rem 3.6rem;
+        }
+        
+        /* 3d click */
+        .shadow {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: .4rem 1rem;
+            margin: .5rem;
+            cursor: pointer;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.337);
+        }
+
+        .shadow:active {
+            box-shadow: none;
+            transform: translate(2px, 2px);
+        }
+
+        /* margin and padding together */
+        .m-p {
+            background-color: green;
+            color: white;
+            padding: .5rem 1rem;
+            margin: 1rem;
+            border: none;
+            transition: padding .13s, margin .13s;
+        }
+
+        .m-p:hover {
+            padding: .5rem 1.5rem;
+            margin: .8rem .5rem;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button class="back">Back</button>
+        <a href="#" class="page-num">1</a>
+        <a href="#" class="page-num">2</a>
+        <a href="#" class="page-num">3</a>
+        <a href="#" class="page-num">4</a>
+        <a href="#" class="page-num">5</a>
+        <button class="next">Next</button>
+        <hr>
+    </div>
+    <!-- strethc -->
+    <button class="stretch">Stretch</button>
+    <hr>
+    <!-- 3D click -->
+    <button class="shadow">Shadow</button>
+    <hr>
+
+    <!-- margin padding together  -->
+    <button class="m-p">One</button>
+    <button class="m-p">Two</button>
+    <button class="m-p">Three</button>
+</body>
+</html>
